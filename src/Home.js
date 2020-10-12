@@ -1,11 +1,17 @@
 
 import React from 'react';
-
-
-
 function Home(){
     return(
-        <h1>Home component</h1>
+        <div>
+                    
+            
+            
+            <ul>
+                <li>job list 1</li>
+                <li>job list 2</li>
+                <li>job list 3</li>
+            </ul>
+        </div>
     )
 }
-export default Home;
+        export default Home;
