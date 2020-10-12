@@ -5,12 +5,16 @@ import logo from './logo.svg';
 import './App.css';
 import Footer from './Footer';
 import Search from './Search';
+import Login from './Login';
+
+
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
         <Header></Header>
+        <Login></Login>
         <Search></Search>
         
         
