@@ -7,3 +7,6 @@ created components header.js, footer.js, login.js.
 day2 01-10-2020
 created home component with job list 
 created search component with search input
+day3 05-10-2020
+created login component with username and password 
+ created css for login component
