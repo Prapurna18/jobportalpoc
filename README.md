@@ -13,3 +13,8 @@ day3 05-10-2020
 
 created login component with username and password 
  created css for login component
+
+ day4 06-10-2020
+
+ created list of jobs by using javascript
+ 
