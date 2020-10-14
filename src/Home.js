@@ -1,37 +1,45 @@
 
 import React from 'react';
 
-function Home(){
-    let jobList = ["job list 1", "job list 2", "job list 3", "job list 4","job list 5"];
+function Home() {
+    let jobList = ["react jobs", "Angular jobs", "Html jobs", "css jobs", "node.js"];
 
-    const getListOfJobs = ()=>{
-        for(let i=0;i<jobList.length;i++){
-        jobList[i]=<li>{jobList[i]}</li>
+    const getListOfJobs = () => {
+        for (let i = 0; i < jobList.length; i++) {
+            jobList[i] = <li>{jobList[i]}</li>
         }
         return jobList;
     }
-    const jobportal = ()=>{
-        return <h1>WELCOME TO JOB PORTAL</h1>;
-
-
-    
+    const jobportal = (text) => {
+    return <h1>{text}</h1>;
     }
-    
-    
-    return(
+    const byePortal=(text) => {
+        return<h1>{text}</h1>;
+    }
+
+
+    return (
         <div>
             {
-                jobportal()
+                jobportal('WELCOME TO JOB PORTAL')
+
             }
-            
+
             <ul>
                 {
-                   getListOfJobs() 
+                    getListOfJobs()
+
                 }
-               
+
             </ul>
+            {
+            byePortal('BYE TO JOBPORTAL')
+}
+
+    <button onclick="leave this page()">click me</button>
+
         </div>
     )
 }
 
-        export default Home;
+export default Home;
