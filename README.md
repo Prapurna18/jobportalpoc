@@ -17,4 +17,9 @@ created login component with username and password
  day4 06-10-2020
 
  created list of jobs by using javascript
+
+ day5 07-10-2020
+
+ implemented state in app.js
+ 
  
