@@ -22,4 +22,13 @@ created login component with username and password
 
  implemented state in app.js
  
+
+ day 6 08-10-2020
+
+ implemented props in app.js 
+ created some buttons like increment and decrement functionality
+
+
+
+ 
  
