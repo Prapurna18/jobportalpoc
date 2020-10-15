@@ -1,8 +1,9 @@
 
 import React from 'react';
 
-function Home() {
+function Home(props) {
     let jobList = ["react jobs", "Angular jobs", "Html jobs", "css jobs", "node.js"];
+
 
     const getListOfJobs = () => {
         for (let i = 0; i < jobList.length; i++) {
@@ -16,6 +17,8 @@ function Home() {
     const byePortal=(text) => {
         return<h1>{text}</h1>;
     }
+    
+
 
 
     return (
@@ -24,6 +27,11 @@ function Home() {
                 jobportal('WELCOME TO JOB PORTAL')
 
             }
+                <h1>{props.interest}{props.cards}</h1>
+                <button onClick={props.thousand} type="button" >1000</button>
+                <button onClick={props.decrement} type="button" >-1000</button>
+                <button onClick={props.interval} type="button" >reset</button>
+
 
             <ul>
                 {
