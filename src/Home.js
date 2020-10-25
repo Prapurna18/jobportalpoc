@@ -1,15 +1,20 @@
-
 import React from 'react';
 
 function Home(props) {
     let jobList = ["react jobs", "Angular jobs", "Html jobs", "css jobs", "node.js"];
+    const result=jobList.filter(
+        (eachString)=>{
+            return eachString=="react jobs"
+        }
+    )
+    console.log(result);
 
 
     const getListOfJobs = () => {
-        for (let i = 0; i < jobList.length; i++) {
-            jobList[i] = <li>{jobList[i]}</li>
+        for (let i = 0; i < result.length; i++) {
+            result[i] = <li>{result[i]}</li>
         }
-        return jobList;
+        return result;
     }
     const jobportal = (text) => {
     return <h1>{text}</h1>;
