@@ -41,9 +41,9 @@ function App() {
 
   return (
     <div className="App">
-      <Signin></Signin>
       <header className="App-header">
         <Header name={personalDetails} number={age}></Header>
+        <Signin></Signin>
 
         <h1>My favourite hobbies are {hobbies} </h1>
         <h1>My favourite games are {games} </h1>
