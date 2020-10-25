@@ -5,6 +5,7 @@ import './App.css';
 import Footer from './Footer';
 import Search from './Search';
 import Login from './Login';
+import Signin from  './Signin';
 
 
 
@@ -40,6 +41,7 @@ function App() {
 
   return (
     <div className="App">
+      <Signin></Signin>
       <header className="App-header">
         <Header name={personalDetails} number={age}></Header>
 
