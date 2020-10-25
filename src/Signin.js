@@ -14,6 +14,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
 
 function Copyright() {
+
   return (
     <Typography variant="body2" color="textSecondary" align="center">
       {'Copyright © '}
@@ -46,8 +47,42 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function SignIn() {
+export default function SignIn(props) {
+
+    const [email, SetEmail] = useState('');
+    const [password, setPassword] = useState('');
+   
   const classes = useStyles();
+ const handlePassword = (event) => {
+   console.log(event.target.value);
+   setPassword(event.target.value)
+
+ }
+ const handleEmail = (event) => {
+  console.log(event.target.value);
+  SetEmail(event.target.value)
+  
+
+
+}
+const handleLogin = (event) => {
+  console.log(event.target.value);
+  if(email=='deviprapurna18@gmail.com' && password=='umalakshmi.'){
+    props.SetisLogin(true)
+
+  }
+  else{
+    props.SetisLogin(false)
+
+  }
+  
+
+
+}
+
+
+
+
 
   return (
     <Container component="main" maxWidth="xs">
@@ -70,6 +105,7 @@ export default function SignIn() {
             name="email"
             autoComplete="email"
             autoFocus
+            onChange={handleEmail}
           />
           <TextField
             variant="outlined"
@@ -81,6 +117,9 @@ export default function SignIn() {
             type="password"
             id="password"
             autoComplete="current-password"
+            
+            onChange={handlePassword}
+
           />
           <FormControlLabel
             control={<Checkbox value="remember" color="primary" />}
@@ -92,6 +131,7 @@ export default function SignIn() {
             variant="contained"
             color="primary"
             className={classes.submit}
+            onClick={handleLogin}
           >
             Sign In
           </Button>

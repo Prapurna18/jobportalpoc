@@ -16,6 +16,7 @@ function App() {
   const [personalDetails, setPersonalDetails] = useState('prapurna');
   const [age, setAge] = useState(26);
   const [money, setMoney] = useState(100);
+  const [isLogin, setisLogin] = useState(false);
 
   const plus = () => {
     setAge(age + 1);
@@ -43,7 +44,11 @@ function App() {
     <div className="App">
       <header className="App-header">
         <Header name={personalDetails} number={age}></Header>
-        <Signin></Signin>
+        <Signin setisLogin={setisLogin}>
+           
+            
+          
+        </Signin>
 
         <h1>My favourite hobbies are {hobbies} </h1>
         <h1>My favourite games are {games} </h1>
