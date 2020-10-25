@@ -28,6 +28,8 @@ created login component with username and password
  implemented props in app.js 
  created some buttons like increment and decrement functionality
 
+day 7 09-10-2020
+filtered joblist by using javascript in home.js
 
 
  
