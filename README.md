@@ -31,6 +31,10 @@ created login component with username and password
 day 7 09-10-2020
 filtered joblist by using javascript in home.js
 
+day 8 12-10-2020
+
+installed material ui and material ui icons in signin.js file
+
 
  
  
